@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/23/17/30/abstract-1105851_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background-color: rgba(172, 255, 47, 0.854);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+header .logo-conteiner {
+  width: 10%;
+}
+
+header .logo {
+  margin: 30px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+header .titulo-principal {
+  width: 80%;
+}
+
+header .titulo-conteiner {
+  text-align: center;
+  width: 30%;
+}
+
+header nav {
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 5px;
+  margin: 5px;
+  color: beige;
+  background-color: blueviolet;
+  font-size: 16px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+
+header nav ul li:hover {
+  background-color: beige;
+}
+
+header nav ul li:hover > a {
+  color: blueviolet;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.synopsis h2 {
+  justify-content: center;
+  text-align: center;
+  background-color: violet;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.synopsis div {
+  background-color: lightblue;
+  justify-content: flex-start;
+  padding: 20px;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.characters h2 {
+  text-align: center;
+  background-color: violet;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.watch-the-show {
+  background-color: rgba(153, 205, 50, 0.975);
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.watch-the-show img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.watch-the-show img:hover {
+  opacity: 0.7;
+}
+
+.watch-the-show div h2 {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.watch-the-show div p {
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.fun-facts div h2 {
+  text-align: center;
+  background-color: violet;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.fun-facts div ul {
+  background-color: lightblue;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: start;
+  padding: 30px;
+  margin: 20px;
+}
+
+.imagenes-autores {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.fun-facts div a {
+  background-color: lightblue;
+  width: 25%;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.fun-facts div a img {
+  width: 100%;
+  transition: all 0.8s;
+}
+
+.fun-facts div a img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: rgba(153, 205, 50, 0.975);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div {
+  padding: 20px;
+}
+
+footer div nav ul {
+  list-style: none;
+}
+
+footer div nav ul li {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+footer div nav ul li span {
+  margin-left: 5px;
+}
+
+@media (max-width: 880px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header .titulo-conteiner {
+    width: 60%;
+  }
+
+  header nav {
+    width: 90%;
+  }
+
+  .fun-facts div a {
+    width: 40%;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+
+  footer div {
+    margin: 10px;
+    padding: 5px;
+  }
+  footer div ul {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: none;
+    background-color: blue;
+  }
+
+  header .titulo-conteiner {
+    width: 100%;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .watch-the-show img {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .watch-the-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fun-facts div a {
+    width: 45%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
