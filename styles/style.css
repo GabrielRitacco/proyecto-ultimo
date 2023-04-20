@@ -104,20 +104,34 @@ header nav ul li a {
 }
 
 .grid-item {
-  background-color: lightblue;
-  width: 200px;
-  margin: 20px;
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  border-radius: 10px;
+  margin: 20px;
 }
 
-.grid-item img {
-  width: 100%;
-  border-radius: 50%;
+.tarjetas {
+  background-color: rgba(255, 192, 203, 0.502);
+  border: 2px solid black;
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  height: 350px;
+}
+
+.tarjetas img {
+  width: 70%;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.nombre-personaje {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .watch-the-show {
@@ -269,13 +283,14 @@ footer div nav ul li span {
   header nav ul {
     flex-direction: column;
   }
-
+  /*
   .grid-item {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
   }
+  */
 
   .watch-the-show img {
     width: 80%;
